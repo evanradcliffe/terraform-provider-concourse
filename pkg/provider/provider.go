@@ -44,6 +44,7 @@ func Provider() *schema.Provider {
 		DataSourcesMap: map[string]*schema.Resource{
 			"concourse_pipeline": dataPipeline(),
 			"concourse_team":     dataTeam(),
+			"concourse_job":      dataJob(),
 		},
 
 		ResourcesMap: map[string]*schema.Resource{
